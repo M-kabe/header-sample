@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/*全端末（PC・タブレット・スマホ）共通設定
+------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*全体の設定
+---------------------------------------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #333;	/*全体の文字色*/
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 1.6rem;	/*文字サイズ*/
+	line-height: 2;		/*行間*/
+	background: #fff;	/*背景色*/
+	-webkit-text-size-adjust: none;
+}
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,select,input,textarea {
+  margin: 0px;
+  padding: 0px;
+  font-size: 100%;
+  font-weight: normal;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+table {
+  border-collapse:collapse;
+  font-size: 100%;
+  border-spacing: 0;
+}
+iframe {
+  width: 100%;
+}
+video,audio {
+  max-width: 100%;
+}
+
+/*リンク（全般）設定
+---------------------------------------------------------------------------*/
+a {
+	color: #333;		/*リンクテキストの色*/
+	transition: 0.5s;	/*マウスオン時の移り変わるまでの時間設定。0.5秒。*/
+}
+a:hover {
+	color: #6fbfd1;			/*マウスオン時の文字色*/
+	text-decoration: none;	/*マウスオン時に下線を消す設定。残したいならこの１行削除。*/
+}
+/*マウスオン時の画像*/
+a:hover img {
+	opacity: 0.8;	/*80%色がついた状態*/
+}
+
+/*inner共通
+---------------------------------------------------------------------------*/
+.inner {
+	max-width: 1300px;	/*サイトの最大幅*/
+	margin: 0 auto;
+}
+
+/* header
+---------------------------------------------------------------------------*/
+header {
+  background-color: #fff;
+  height: 100px;
+  color: #333;
+}
+#logo {
+  width: 350px;
+  float: left;
+  margin-top: 30px;
+  margin-left: 3%;
+}
+
+.login a {
+  display: inline-block;
+  text-decoration: none;
+  float: right;
+  margin-top: 30px;
+  margin-right: 3%;
+  border: 1px solid #fe7200;
+  background: url("../images/icon_login.png") no-repeat 20px 12px / 15px;
+  background-color: #fe7200;
+  color: #fff;
+  padding: 0.5rem 3.0rem 0.5rem 5.0rem;
+  border-radius: 0.4rem;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.2rem;
+}
+
+/* nav
+---------------------------------------------------------------------------*/
+#menubar {
+  clear: both;
+  height: 75px;
+  text-align: center;
+  background: #6fbfd1;
+  border-bottom: 1px solid #fff;
+}
+#menubar li {
+  float: left;
+  width: 216px;
+}
+#menubar li a {
+  border-right: 1px solid #fff;
+  text-decoration: none;
+  display: block;
+  line-height: 1.6;
+  color: #fff;
+  height: 60px;
+  padding-top: 15px;
+}
+#menubar li a:hover {
+  background: #94d1df;
+}
+#menubar li span {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  opacity: 0.5;
+}
